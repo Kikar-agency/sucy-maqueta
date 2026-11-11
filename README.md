@@ -15,7 +15,7 @@ Sitio estático (HTML, CSS y JS sin dependencias). No hace falta compilar nada.
 4. Cuando esté publicado, en Custom domains sumá `sucy.com.ar` y `www.sucy.com.ar`.
 
 ## Publicar en GitHub Pages
-Settings → Pages → Deploy from a branch → `main` / `root`. Las rutas usan `/` absoluto, así que funciona con dominio propio. Si se publica en `usuario.github.io/repo` hay que configurar el dominio propio primero.
+Settings → Pages → Deploy from a branch → `main` / `root`. Las rutas son relativas, así que funciona tanto en `usuario.github.io/repo/` como con dominio propio.
 
 ## Qué falta cargar después de la sesión
 - `assets/video/dron.mp4`: toma continua del dron. El hero la avanza con el scroll. Para que avance suave, exportarla con keyframes seguidos:

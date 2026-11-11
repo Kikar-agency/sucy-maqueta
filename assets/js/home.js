@@ -84,7 +84,7 @@
       b.style.background = e.color;
       b.setAttribute("aria-label", "Ver la ensalada " + e.nombre);
       b.innerHTML =
-        '<span class="foto"><img src="/assets/img/' + e.img + '" alt="" loading="lazy"></span>' +
+        '<span class="foto"><img src="assets/img/' + e.img + '" alt="" loading="lazy"></span>' +
         '<span class="label" style="font-size:12px">' + e.linea + "</span>" +
         '<span class="nombre">' + e.nombre + "</span>" +
         '<span class="ver">Ver qué tiene<span class="mas"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></span>';
@@ -94,7 +94,7 @@
   }
   function abrirFicha(i) {
     var e = ENSALADAS[i];
-    document.getElementById("ficha-img").src = "/assets/img/" + e.img;
+    document.getElementById("ficha-img").src = "assets/img/" + e.img;
     document.getElementById("ficha-img").alt = "Ensalada " + e.nombre;
     document.getElementById("ficha-linea").textContent = e.linea;
     document.getElementById("ficha-nombre").textContent = e.nombre;
