@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sucy · Siempre juntos en tu mesa</title>
+<meta name="description" content="Verdura y ensaladas listas de nuestra quinta en el cinturón verde de Córdoba. Certificación GlobalG.A.P. y HACCP. Encontrá tu Sucy más cercano.">
+<meta property="og:title" content="Sucy · Siempre juntos en tu mesa">
+<meta property="og:description" content="Verdura y ensaladas listas de nuestra quinta en Córdoba, con certificación internacional.">
+<meta property="og:image" content="/assets/img/espinaca.jpg">
+<link rel="icon" href="/assets/img/logo.png">
+<link rel="preload" href="/assets/fonts/oswald.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/sucy.css">
+</head>
+<body>
+
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Principal">
+    <a class="brand" href="/"><img src="/assets/img/logo.png" alt="">Sucy</a>
+    <div class="nav-links">
+      <a href="#calidad">Calidad</a>
+      <a href="#fabrica">La fábrica</a>
+      <a href="#ensaladas">Ensaladas</a>
+      <a href="#mapa">Dónde comprar</a>
+    </div>
+    <a class="btn btn-verde" href="/mayoristas/">Soy comercio</a>
+  </nav>
+</div>
+
+<main>
+  <!-- Hero: el video del dron avanza con el scroll (assets/video/dron.mp4) -->
+  <section class="hero-scroll" aria-label="Presentación">
+    <div class="hero-sticky">
+      <div class="hero-frame">
+        <img class="poster" src="/assets/img/espinaca.jpg" alt="">
+        <video id="dron" muted playsinline preload="auto" poster="/assets/img/espinaca.jpg">
+          <source src="/assets/video/dron.mp4" type="video/mp4">
+        </video>
+        <div class="hero-copy">
+          <div>
+            <h1>Siempre juntos <span class="hl-mark">en tu mesa</span>.</h1>
+            <p>Más de 30 años cultivando en el cinturón verde de Córdoba. Bajá y entrá con nosotros a la quinta y a la planta.</p>
+          </div>
+          <ol class="hero-steps" aria-label="Recorrido">
+            <li class="on">01 · Las hectáreas</li>
+            <li>02 · Entrada a la planta</li>
+            <li>03 · Línea de lavado</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calidad" class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Por qué nos <span class="hl-wavy">diferenciamos</span></h2>
+        <p>No lo decimos nosotros: nos auditan organismos externos durante todo el año.</p>
+      </div>
+      <div class="cert-grid">
+        <article class="cert oscura">
+          <div class="cert-top"><span class="tag">En el campo</span><span class="label" style="color:var(--salvia)">Certificación internacional</span></div>
+          <h3>GlobalG.A.P.</h3>
+          <p>Es el estándar internacional de buenas prácticas agrícolas. Controla cómo cultivamos: el agua de riego, los insumos, la cosecha y la trazabilidad de cada lote.</p>
+          <ul><li>Agua de riego</li><li>Trazabilidad</li><li>Cosecha</li><li>Cuidado del suelo</li></ul>
+          <a class="mas" href="#">Ver nuestro certificado →</a>
+        </article>
+        <article class="cert clara">
+          <div class="cert-top"><span class="tag salvia">En la planta</span><span class="label" style="color:var(--gris2)">Seguridad alimentaria</span></div>
+          <h3>HACCP</h3>
+          <p>Es el sistema que identifica cada punto crítico del procesamiento y lo controla. Lavado, corte, envasado y frío tienen un control registrado.</p>
+          <ul><li>Triple lavado</li><li>Corte</li><li>Envasado</li><li>Cadena de frío</li></ul>
+          <a class="mas" href="#">Ver nuestro certificado →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="fabrica" class="sec banda">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Conocé nuestra <span class="hl-circle">fábrica</span></h2>
+        <p>Recorrela en 360°: arrastrá para mirar alrededor y tocá los puntos para pasar de sala.</p>
+      </div>
+      <!-- Cuando esté el tour real (Kuula, Momento360 o Pannellum), reemplazar el contenido de .tour por su <iframe>. -->
+      <div class="tour" id="tour">
+        <img class="fondo" src="/assets/img/sopita.jpg" alt="">
+        <span class="tag" style="position:absolute;left:24px;top:24px">Tour 360° · próximamente</span>
+        <span class="donde">Estás en:&nbsp;<span data-sala-nombre>Ingreso</span></span>
+        <div class="centro">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="4"/><path d="M12 3v18M8 4.5c-1.5 2-2 4.5-2 7.5s.5 5.5 2 7.5M16 4.5c1.5 2 2 4.5 2 7.5s-.5 5.5-2 7.5"/></svg>
+          <b data-sala-nombre>Ingreso</b>
+          <span data-sala-texto>Donde llega la verdura recién cosechada del campo.</span>
+        </div>
+        <div class="paradas" role="group" aria-label="Salas de la planta"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ensaladas" class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Nuestras <span class="hl-pill">ensaladas</span></h2>
+        <p>Lavadas, cortadas y envasadas en la quinta. Tocá una para ver qué tiene.</p>
+      </div>
+      <div class="carrusel" id="carrusel"></div>
+    </div>
+    <dialog class="ficha" id="ficha" aria-labelledby="ficha-nombre">
+      <div class="ficha-in">
+        <div class="ficha-foto"><img id="ficha-img" src="" alt=""></div>
+        <div class="ficha-tx">
+          <div class="ficha-top"><span class="label" id="ficha-linea" style="color:var(--gris2)"></span><button class="cerrar" type="button" aria-label="Cerrar" data-cerrar><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+          <h3 id="ficha-nombre"></h3>
+          <div><span class="label">Qué tiene</span><div class="ings" id="ficha-ings" style="margin-top:8px"></div></div>
+          <div class="btns">
+            <a class="btn btn-rojo" href="#mapa" data-cerrar>Dónde conseguirla</a>
+            <a class="btn btn-linea" href="/mayoristas/">La quiero para mi negocio</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </section>
+
+  <section id="mapa" class="sec mapa-sec">
+    <div class="wrap mapa-grid">
+      <div>
+        <h2>Encontrá tu Sucy <span class="hl-mark crema">más cercano</span></h2>
+        <p style="font-size:18px">Poné tu dirección y te mostramos los comercios que tienen Sucy cerca tuyo.</p>
+        <form class="buscar" id="buscar">
+          <label class="label" for="dir">Tu dirección</label>
+          <div class="fila"><input id="dir" type="text" autocomplete="street-address" placeholder="Ej: Av. Colón 1200, Córdoba"><button class="btn btn-rojo" type="submit">Buscar</button></div>
+        </form>
+        <div id="res" hidden>
+          <ul class="resultados" id="res-lista"></ul>
+          <p class="nota" style="margin-top:8px">Versión de prueba: los comercios son de ejemplo hasta cargar los puntos de venta reales.</p>
+        </div>
+      </div>
+      <div class="mapa" role="img" aria-label="Mapa de Córdoba con puntos de venta">
+        <span class="calle" style="left:0;right:0;top:30%;height:14px"></span>
+        <span class="calle" style="left:0;right:0;top:62%;height:10px"></span>
+        <span class="calle" style="top:0;bottom:0;left:28%;width:14px"></span>
+        <span class="calle" style="top:0;bottom:0;left:66%;width:10px"></span>
+        <span class="rio"></span>
+        <span class="plaza" style="left:8%;top:8%;width:18%;height:18%"></span>
+        <span class="plaza" style="left:72%;top:70%;width:20%;height:22%"></span>
+        <span class="pin" style="left:38%;top:40%"></span><span class="pin" style="left:58%;top:58%"></span><span class="pin" style="left:30%;top:72%"></span>
+        <span class="pin verde" style="left:75%;top:30%"></span><span class="pin verde" style="left:18%;top:22%"></span>
+        <span class="yo"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap dos">
+      <div class="video">
+        <!-- Cuando esté el video institucional: <video src="/assets/video/institucional.mp4" controls poster="/assets/img/lechuga.jpg"></video> -->
+        <img src="/assets/img/lechuga.jpg" alt="">
+        <button class="play" type="button" aria-label="Reproducir video: por qué elegirnos"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5l12 7-12 7z"/></svg></button>
+        <span class="tag">Video institucional · próximamente</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h2>Por qué <span class="hl-mark">elegirnos</span></h2>
+        <ol class="lista-num">
+          <li><span class="n">01</span><span><b>Triple lavado</b><span>Cada hoja pasa por tres lavados antes de envasarse.</span></span></li>
+          <li><span class="n">02</span><span><b>Control de punta a punta</b><span>Desde el agua con la que regamos hasta el momento de plantar y cosechar.</span></span></li>
+          <li><span class="n">03</span><span><b>Hidroponía</b><span>Producción hidropónica para tener la misma calidad todo el año.</span></span></li>
+          <li><span class="n">04</span><span><b>Certificación internacional</b><span>Nos auditan durante todo el año para sostener la calidad.</span></span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec durazno">
+    <div class="wrap">
+      <div class="sec-head" style="margin:0">
+        <div class="grito">
+          <span class="g">Elegí</span><span class="c">sabiendo qué llevás</span>
+          <span class="g">Comé</span><span class="c" style="margin:0">tranquilo</span>
+        </div>
+        <p style="font-size:19px;color:#3A2A22">Lo que dicen quienes ya nos compran, tal cual lo dejaron en Google.</p>
+      </div>
+      <!-- Reemplazar por las reseñas reales de Google (widget o carga manual). -->
+      <div class="resenas">
+        <div class="resena"><span class="label" style="color:#8A5A44">Reseña de Google</span><span class="esqueleto"></span><span class="esqueleto" style="width:85%"></span><span class="esqueleto" style="width:60%"></span></div>
+        <div class="resena"><span class="label" style="color:#8A5A44">Reseña de Google</span><span class="esqueleto"></span><span class="esqueleto" style="width:85%"></span><span class="esqueleto" style="width:60%"></span></div>
+        <div class="resena"><span class="label" style="color:#8A5A44">Reseña de Google</span><span class="esqueleto"></span><span class="esqueleto" style="width:85%"></span><span class="esqueleto" style="width:60%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-bottom:64px">
+    <div class="wrap">
+      <div class="puente">
+        <div><span class="label" style="color:var(--gris2)">¿Tenés un comercio?</span><div class="t">Vendé Sucy en tu negocio</div></div>
+        <a class="btn btn-rojo" href="/mayoristas/">Ir a Sucy para negocios <span class="flecha"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="/assets/img/logo.png" alt="Sucy Prácticas">
+    <span>Cno. Colonia Tirolesa Km 14½ · Córdoba</span>
+    <a href="tel:+543516459641">351 645-9641</a>
+    <a href="mailto:info@sucy.com.ar">info@sucy.com.ar</a>
+    <a href="https://instagram.com/sucy_practicas">@sucy_practicas</a>
+  </div>
+</footer>
+
+<script src="/assets/js/home.js" defer></script>
+</body>
+</html>
